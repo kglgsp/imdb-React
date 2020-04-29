@@ -13,10 +13,12 @@ To use the API, you need to create an API key. You should be able to register fo
 *Note: Feel free to be creative with how you style your app!*
 
 Consult the OMDB's API [documentation](http://www.omdbapi.com/) (link: [http://www.omdbapi.com/](http://www.omdbapi.com/)) on how to use the API. A user should be able to search for movies through your search form using movie titles. Basically, the form should have the following components:
+
   - A search bar
   - Submit button
 
 When a user presses Submit, use the OMDB API to list each movie underneath the search form. For each movie returned from the API, render the components listed below in a grid layout.
+
   - Title and Year
   - Image (display the image from the image source provided)
   - A delete button
