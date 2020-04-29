@@ -2,7 +2,7 @@
 ![travel inspiration stock photo](https://www.creativeboom.com/uploads/articles/05/0541498270eb7f7a0b62f9a850a95698e027717f_2200.jpg)
 
 ### Introduction ###
-The purpose of this small interview project is for us to gauge your understanding of React and frontend web development. We believe in a hands-on approach to our interview process and since you will be working on your projects remotely, we think this a good chance to showcase your engineering chops. For this project, you are expected to create a movie search form using React that queries and displays multiple titles fetched from the OMDB API. Given the information you provided on your technical capabilities, we assume that you are familiar working with ReactJS and AJAX. As such, this project should not take you more than 2-3 hours to complete.
+The purpose of this small interview project is for us to gauge your understanding of React and working with AJAX. We believe in a hands-on approach to our interview process and since you will be working on your projects remotely, we think this a good chance to showcase your engineering chops. For this project, you are expected to create a movie search form using React that queries and displays multiple titles fetched from the OMDB API. Given the information you provided on your technical capabilities, we assume that you are familiar working with ReactJS and AJAX. As such, this project should not take you more than 2-3 hours to complete.
 
 Feel free to reach out to williamhuang@flygetlost.com with any questions.
 
