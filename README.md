@@ -1,4 +1,4 @@
-# GetLost Software Engineer Interview Project #
+# GetLost Software Intern Interview Project #
 ![travel inspiration stock photo](https://www.creativeboom.com/uploads/articles/05/0541498270eb7f7a0b62f9a850a95698e027717f_2200.jpg)
 
 ### Project Instructions ###
