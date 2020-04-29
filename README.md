@@ -1,5 +1,5 @@
 # GetLost Software Engineer Interview Project #
-<p><img src='https://getlost-misc.s3.us-east-2.amazonaws.com/getlost_pink.jpg' width='40%' style='display: block; margin: auto'/><p>
+![travel inspiration stock photo](https://www.creativeboom.com/uploads/articles/05/0541498270eb7f7a0b62f9a850a95698e027717f_2200.jpg)
 
 ### Project Instructions ###
 The purpose of this small interview project is for us to gauge your understanding of React and frontend web development. We believe in a hands-on approach to our interview process and since you will be working on your projects remotely, we think this a good chance to showcase your engineering chops. For this project, you are expected to create a movie search form using React that queries and displays multiple titles fetched from the OMDB API. Given the information you provided on your technical capabilities, we assume that you are familiar working with ReactJS and AJAX. As such, this project should not take you more than 2-3 hours to complete.
@@ -39,7 +39,5 @@ When a user clicks on the delete button for a movie, remove the movie that was c
 
 ### 5. How to Submit Project: ###
 Email engineering@flygetlost.com with the following information:
-  1. A link to the web application
-  - *Note: Feel free to host this however you like — free platforms that help you host your React apps include [Heroku](https://heroku.com/) and [Github](https://github.com/). Consult [this guide](https://medium.com/better-programming/how-to-deploy-your-react-app-to-heroku-aedc28b218ae) on how to deploy to Heroku.*
-  2. A link to Github with the source code for this project.
-  - *Note: Remember to make it publicly accessible so we can see your awesome work :)*
+  1. A link to the web application (*Note: Feel free to host this however you like — free platforms that help you host your React apps include [Heroku](https://heroku.com/) and [Github](https://github.com/). Consult [this guide](https://medium.com/better-programming/how-to-deploy-your-react-app-to-heroku-aedc28b218ae) on how to deploy to Heroku.*)
+  2. A link to Github with the source code for this project. (*Note: Remember to make it publicly accessible so we can see your awesome work :)*)
