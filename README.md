@@ -2,7 +2,7 @@
 ![travel inspiration stock photo](https://www.creativeboom.com/uploads/articles/05/0541498270eb7f7a0b62f9a850a95698e027717f_2200.jpg)
 
 ### Introduction ###
-The purpose of this small interview project is for us to gauge your understanding of React and working with AJAX. We believe in a hands-on approach to our interview process and since you will be working on your projects remotely, we think this a good chance to showcase your engineering chops. For this project, you are expected to create a movie search form using React that queries and displays multiple titles fetched from the OMDB API. Given the information you provided on your technical capabilities, we assume that you are familiar working with ReactJS and AJAX. As such, this project should not take you more than 2-3 hours to complete.
+The purpose of this small interview project is for us to gauge your understanding of React and working with AJAX. We believe in a hands-on approach to our interview process and since you will be working on your projects remotely, we think this a good chance to showcase your engineering chops. Given the information you provided on your technical capabilities, we assume that you are familiar working with ReactJS and AJAX, which you would need to know to complete this project. As such, this project should not take you more than 2-3 hours to complete.
 
 Feel free to reach out to williamhuang@flygetlost.com with any questions.
 
@@ -12,7 +12,7 @@ To use the API, you need to create an API key. You should be able to register fo
 ### 2. What you're building ###
 *Note: Feel free to be creative with how you style your app!*
 
-Consult the OMDB's API [documentation](http://www.omdbapi.com/) (link: [http://www.omdbapi.com/](http://www.omdbapi.com/)) on how to use the API. A user should be able to search for movies through your search form using movie titles. Basically, the form should have the following components:
+For this project, you are expected to code and host a React web application. The web application should display a movie search form that queries and displays multiple titles fetched from the OMDB API. Please consult the OMDB's API [documentation](http://www.omdbapi.com/) (link: [http://www.omdbapi.com/](http://www.omdbapi.com/)) on how to use the API. A user should be able to search for movies through your search form using movie titles. Basically, the form should have the following components:
 
   - A search bar
   - Submit button
@@ -42,5 +42,5 @@ When a user clicks on the delete button for a movie, remove the movie that was c
 ### 5. How to Submit Project: ###
 Email engineering@flygetlost.com with the following information:
 
-  1. A link to the web application (*Note: Feel free to host this however you like — free platforms that help you host your React apps include [Heroku](https://heroku.com/) and [Github](https://github.com/). Consult [this guide](https://medium.com/better-programming/how-to-deploy-your-react-app-to-heroku-aedc28b218ae) on how to deploy to Heroku.*)
-  2. A link to Github with the source code for this project. (*Note: Remember to make it publicly accessible so we can see your awesome work :)*)
+  1. A URL link to your web application (*Note: Feel free to host this however you like — free platforms that help you host your React apps include [Heroku](https://heroku.com/) and [Github](https://github.com/). Consult [this guide](https://medium.com/better-programming/how-to-deploy-your-react-app-to-heroku-aedc28b218ae) on how to deploy to Heroku.*)
+  2. A URL link to Github with the source code for this project. (*Note: Remember to make it publicly accessible so we can see your awesome work :)*)
