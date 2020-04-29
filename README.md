@@ -39,5 +39,6 @@ When a user clicks on the delete button for a movie, remove the movie that was c
 
 ### 5. How to Submit Project: ###
 Email engineering@flygetlost.com with the following information:
+
   1. A link to the web application (*Note: Feel free to host this however you like — free platforms that help you host your React apps include [Heroku](https://heroku.com/) and [Github](https://github.com/). Consult [this guide](https://medium.com/better-programming/how-to-deploy-your-react-app-to-heroku-aedc28b218ae) on how to deploy to Heroku.*)
   2. A link to Github with the source code for this project. (*Note: Remember to make it publicly accessible so we can see your awesome work :)*)
