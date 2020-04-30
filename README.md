@@ -2,7 +2,7 @@
 ![travel inspiration stock photo](https://www.creativeboom.com/uploads/articles/05/0541498270eb7f7a0b62f9a850a95698e027717f_2200.jpg)
 
 ### Introduction ###
-The purpose of this small interview project is for us to gauge your understanding of React and AJAX. We believe in a hands-on approach to our interview process and since you will be working on your projects remotely, we think this a good chance to showcase your engineering chops. Given the information you provided on your technical capabilities, we assume that you are familiar working with ReactJS and AJAX, which you would need to know to complete this project. As such, this project should not take you more than 2-3 hours to complete.
+The purpose of the technical interview project is for us to gauge your understanding of React and AJAX. We believe in a hands-on approach to our interview process and since you will be working on your projects remotely, we think this a good chance to showcase your engineering chops. Given the information you provided on your technical capabilities, we assume that you are familiar working with ReactJS and AJAX, which you would need to know to complete this project. As such, this project should not take you more than 2-3 hours to complete.
 
 Feel free to reach out to williamhuang@flygetlost.com with any questions.
 
@@ -17,11 +17,11 @@ For this project, you are expected to code and host a React web application. The
   - A search bar
   - Submit button
 
-When a user presses Submit, use the OMDB API to list each movie underneath the search form. For each movie returned from the API, render the components listed below in a grid layout.
+When a user presses Submit, use the OMDB API to dynamically fetch and list each movie underneath the search form. For each movie returned from the API, render the components listed below using a grid layout.
 
   - Title and Year
   - Image (display the image from the image source provided)
-  - A delete button
+  - A delete button for the movie
 
 Grid Layout Example:
 ![grid layout example](https://storage.googleapis.com/support-forums-api/attachment/thread-2456609-676079104261257749.JPG)
@@ -40,7 +40,7 @@ When a user clicks on the delete button for a movie, remove the movie that was c
   - Using an NPM module such as [axios](https://www.npmjs.com/package/axios) will make life easier when making HTTP calls in React.
 
 ### 5. How to Submit Project: ###
-Email engineering@flygetlost.com with the following information:
+The project is due one week from the receipt of this email. Please email engineering@flygetlost.com with the following information to submit your project:
 
   1. A URL link to your web application (*Note: Feel free to host this however you like — free platforms that help you host your React apps include [Heroku](https://heroku.com/) and [Github](https://github.com/). Consult [this guide](https://medium.com/better-programming/how-to-deploy-your-react-app-to-heroku-aedc28b218ae) on how to deploy to Heroku.*)
-  2. A URL link to Github with the source code for this project. (*Note: Remember to make it publicly accessible so we can see your awesome work :)*)
+  2. A URL link to the Github or Github equivalent with the source code for this project. (*Note: Remember to make it publicly accessible so we can see your awesome work :)*)
