@@ -1,11 +1,9 @@
 import React from 'react';
 import './App.css';
 import 'antd/dist/antd.css';
-import { Layout, Input, Row, Col, Card, Button, Typography } from 'antd';
-const { Footer, Content, Header } = Layout;
+import { Layout, Input, Row, Col, Card, Button } from 'antd';
+const { Footer, Content } = Layout;
 const { Search } = Input;
-const { Meta } = Card;
-const TextTitle = Typography.Title;
 
 const API_KEY = "d7674cb";
 
@@ -27,7 +25,6 @@ const SearchBar = ({searchQuery}) => {
 
 
 const MovieCard = ({Title, Year, Poster}) => {
-
     return (
       <Col style={{margin: '30px 0'}} className="gutter-row" span={5}>
       <div className="gutter-box">
@@ -39,17 +36,15 @@ const MovieCard = ({Title, Year, Poster}) => {
                       src={Poster === 'N/A' ? 'https://placehold.it/198x264&text=Image+Not+Found' : Poster}
                   />
               </div>
-            <div className="movie-card">
-              <h3>{Title} ({Year})</h3>
-            </div>
+              <div className="movie-card">
+                <h3>{Title} ({Year})</h3>
+              </div>
           </Card>
       </div>
   </Col>
 
   )
 }
-
-
 
 class App extends React.Component {
   constructor(props) {
@@ -93,7 +88,7 @@ class App extends React.Component {
         _isMounted: true,
       };
     });
-    this.searchQuery('');
+    //this.searchQuery('');
   }
 
 
@@ -104,12 +99,11 @@ class App extends React.Component {
     });
   }
 
-  removeCard(e) {
-    var array = this.state.items.filter(function(item) {
-      return item !== e.target.value
-    });
-    this.setState({
-      items: array
+  removeCard(imdbID) {
+    this.setState((state) => {
+      return {
+        items: this.state.items.filter((items) => items.imdbID != imdbID)
+      }
     })
   }
 
@@ -133,7 +127,7 @@ class App extends React.Component {
               Poster = {value.Poster}
               />
 
-              <Button onClick={() => this.removeCard(index)} type="dashed">
+              <Button onClick={() => this.removeCard(value.imdbID)} type="dashed">
                 Delete
               </Button>
               </div>
