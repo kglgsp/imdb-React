@@ -1,21 +1,24 @@
-import React, { useEffect, useState } from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react';
 import './App.css';
 import 'antd/dist/antd.css';
-import { Layout, Input, Row, Col } from 'antd';
-const { Header, Footer, Sider, Content } = Layout;
+import { Layout, Input, Row, Col, Card, Button, Typography } from 'antd';
+const { Footer, Content, Header } = Layout;
 const { Search } = Input;
+const { Meta } = Card;
+const TextTitle = Typography.Title;
+
+const API_KEY = "d7674cb";
 
 
-const SearchBar = ({SearchHandler}) => {
+const SearchBar = ({searchQuery}) => {
   return (
     <Row>
       <Col span={15} offset={5}>
         <Search
-          placeholder="Search movie: "
+          placeholder="Search movie title: "
           enterButton="Search"
           size="large"
-          onSearch={value => SearchHandler(value)}
+          onSearch={value => searchQuery(value)}
         />
       </Col>
   </Row>
@@ -23,21 +26,127 @@ const SearchBar = ({SearchHandler}) => {
 }
 
 
-function App() {
-    const setQuery = useState('')
+const MovieCard = ({Title, Year, Poster}) => {
 
-  return (
-    <div className="App">
-      <Layout>
-        <Content>
-         <br></br>
-         <SearchBar SearchHandler={setQuery}/>
-        </Content>
-        <Footer> kglgsp | github © 2020 </Footer>
-      </Layout>
-    </div>
-  );
+    return (
+      <Col style={{margin: '30px 0'}} className="gutter-row" span={5}>
+      <div className="gutter-box">
+          <Card
+              style={{ width: 250 }}>
+              <div className="movie-image">
+                  <img
+                      alt={Title}
+                      src={Poster === 'N/A' ? 'https://placehold.it/198x264&text=Image+Not+Found' : Poster}
+                  />
+              </div>
+            <div className="movie-card">
+              <h3>{Title} ({Year})</h3>
+            </div>
+          </Card>
+      </div>
+  </Col>
+
+  )
+}
+
+
+
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      value: null,
+      _isMounted: false,
+      items: []
+    }
+
+    this.searchQuery = this.searchQuery.bind(this)
+  }
+
+  searchQuery(value) {
+
+    fetch(`http://www.omdbapi.com/?s=${value}&apikey=${API_KEY}`)
+    .then(res => res.json())  
+    .then(
+      (result) => {
+        console.log(result)
+        if (this.state._isMounted) {
+          this.setState({
+            isLoaded: true,
+            items: result.Search
+          });
+        }
+      },
+      
+      (error) => {
+        this.setState({
+          isLoaded:true,
+          error
+        });
+      }
+    )
+  }
+
+  componentDidMount() {
+    this.setState((state) => {
+      return {
+        _isMounted: true,
+      };
+    });
+    this.searchQuery('');
+  }
+
+
+  componentWillUnmount() {
+    this.setState((state) => {
+      return {
+        _isMounted: false};
+    });
+  }
+
+  removeCard(e) {
+    var array = this.state.items.filter(function(item) {
+      return item !== e.target.value
+    });
+    this.setState({
+      items: array
+    })
+  }
+
+  render() {
+
+    return (
+      <div className="App">
+        <Layout>
+
+          <Content>
+          <br></br>
+          <SearchBar searchQuery={this.searchQuery}/>
+           
+          <Row gutter={[16, 16]} justify="center">
+
+            {this.state.items && this.state.items.map((value, index) => (
+              <div>
+              <MovieCard 
+              Title = {value.Title}
+              Year = {value.Year}
+              Poster = {value.Poster}
+              />
+
+              <Button onClick={() => this.removeCard(index)} type="dashed">
+                Delete
+              </Button>
+              </div>
+            ))}
+          </Row>
+          
+          </Content>
+          <Footer> kglgsp | github © 2020 </Footer>
+        </Layout>
+      </div>
+    );
+  }
   
 }
-ReactDOM.render(<App />, document.getElementById('root'));
+
 export default App;
