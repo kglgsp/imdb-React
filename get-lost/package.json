@@ -1,4 +1,5 @@
 {
+  "homepage": "http://kglgsp.github.io/imdb-react",
   "name": "get-lost",
   "version": "0.1.0",
   "private": true,
@@ -27,11 +28,13 @@
     "moment": "2.24.0"
   },
   "scripts": {
-    "start": "node server/server.js",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "preinstall": "npx npm-force-resolutions"
+    "preinstall": "npx npm-force-resolutions",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -49,6 +52,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^2.2.0",
     "npm-force-resolutions": "0.0.3"
   }
 }
