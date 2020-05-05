@@ -11,7 +11,7 @@
   export function searchQuery(value, API_KEY) {
 
     return function(dispatch) {
-        return fetch(`http://www.omdbapi.com/?s=${value}&apikey=${API_KEY}`)
+        return fetch(`https://www.omdbapi.com/?s=${value}&apikey=${API_KEY}`)
         .then(res => res.json())  
         .then(
         (result) => {
