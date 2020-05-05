@@ -48,15 +48,12 @@
 
   
 }
-.movie-card p {
-  color: #999;
-  
-}
 
 .gutter-example .ant-row > div {
   background: transparent;
   border: 0;
 }
-.gutter-box {
-  padding: 5px 0;
+.title {
+  align-items: center;
+  color: #000000;
 }
