@@ -3,7 +3,7 @@
     return {
         type: "DELETE_DATA",
         payload: {
-            items: items.filter((items) => items.imdbID != imdbID)
+            items: items.filter((items) => items.imdbID !== imdbID)
         }
     }
   }
