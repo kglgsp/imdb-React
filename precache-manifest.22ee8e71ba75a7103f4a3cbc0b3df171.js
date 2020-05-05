@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cbc8382b5ba13bd089f08721948fa01b",
+    "revision": "1e4f1c288619e4c429d0633c209e958a",
     "url": "/imdb-react/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/imdb-react/static/css/2.8e04dc2c.chunk.css"
   },
   {
-    "revision": "58b1a210fe96d6353619",
+    "revision": "6ad6a03aaebab649dd02",
     "url": "/imdb-react/static/css/main.7dd7a222.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/imdb-react/static/js/2.6cf3f944.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "58b1a210fe96d6353619",
-    "url": "/imdb-react/static/js/main.47aedc25.chunk.js"
+    "revision": "6ad6a03aaebab649dd02",
+    "url": "/imdb-react/static/js/main.11b8e529.chunk.js"
   },
   {
     "revision": "e7265b1a3dc15639bc8c",
